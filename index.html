@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>YouTravel</title>
+<style>
+body { font-family: Arial, sans-serif; background-color: #f0f8ff; margin:0; padding:0; text-align: center; }
+header { background-color: #00796b; color: white; padding: 30px 0; }
+header img { width: 100px; vertical-align: middle; }
+header h1 { display: inline-block; margin-left: 15px; vertical-align: middle; }
+nav { margin: 20px 0; }
+nav a { margin: 0 10px; text-decoration: none; color: #004d40; font-weight: bold; cursor: pointer; }
+section { display: none; padding: 20px; }
+section.active { display: block; }
+.destinazioni img { width: 300px; border-radius: 10px; margin: 10px; }
+h2 { color: #00796b; }
+p { max-width: 700px; margin: 10px auto; font-size: 18px; line-height: 1.5; color: #004d40; }
+table { margin: 20px auto; border-collapse: collapse; width: 80%; max-width: 800px; }
+th, td { border: 2px solid #00796b; padding: 10px; text-align: center; }
+th { background-color: #98fb98; }
+td { background-color: #e0ffe0; }
+</style>
+</head>
+<body>
+
+<header style="text-align: center; padding: 20px;">
+  <img src="https://i.postimg.cc/3wFYr1GB/You-Travel-Travel-Agency-Logo-Blues-and-Yellows.png" 
+       alt="Logo" 
+       style="width: 100px; height: auto;">
+  <h1 style="font-size: 3em; margin-top: 10px;">YouTravel</h1>
+</header>
+
+<nav>
+<a onclick="showSection('home')">Home</a>
+<a onclick="showSection('roma')">Roma</a>
+<a onclick="showSection('kyoto')">Kyoto</a>
+<a onclick="showSection('sydney')">Sydney</a>
+<a onclick="showSection('cusco')">Cusco</a>
+<a onclick="showSection('parigi')">Parigi</a>
+<a onclick="showSection('contatto')">Contattaci</a> 
+</nav>
+
+<!-- Home page -->
+<section id="home" class="active">
+<h2>Benvenuti in YouTravel!</h2>
+<p>Scopri con noi le mete più belle del mondo. Offriamo consigli, foto e informazioni pratiche per pianificare viaggi indimenticabili.</p>
+
+<h2 style="margin-bottom:5px;">Chi siamo</h2>
+<p style="margin-top:5px;">Siamo un team di appassionati viaggiatori che vuole condividere le bellezze del mondo con tutti. La nostra missione è ispirarti e aiutarti a vivere esperienze uniche in ogni destinazione.</p>
+
+<h2>Destinazioni consigliate</h2>
+<table>
+<tr>
+<th>Paese</th>
+<th>Città</th>
+<th>Attrazione principale</th>
+</tr>
+<tr>
+<td>Italia</td>
+<td>Roma</td>
+<td>Colosseo</td>
+</tr>
+<tr>
+<td>Giappone</td>
+<td>Kyoto</td>
+<td>Templi storici</td>
+</tr>
+<tr>
+<td>Australia</td>
+<td>Sydney</td>
+<td>Opera House</td>
+</tr>
+<tr>
+<td>Perù</td>
+<td>Cusco</td>
+<td>Machu Picchu</td>
+</tr>
+<tr>
+<td>Francia</td>
+<td>Parigi</td>
+<td>Torre Eiffel</td>
+</tr>
+</table>
+</section>
+
+<!-- Roma -->
+<section id="roma">
+<h2>Roma</h2>
+<p>La capitale eterna, Roma è un museo a cielo aperto. Passeggia tra rovine millenarie, piazze pittoresche e fontane incantevoli. Dai un’occhiata al Colosseo, alla Fontana di Trevi e lasciati incantare dal fascino storico di Piazza Navona.</p>
+<img class="destinazioni" 
+src="https://www.archeoroma.it/wp-content/uploads/tour-a-piedi-pantheon-piazza-navona-fontana-di-trevi.jpg" 
+alt="Pantheon" 
+style="display:block; margin: 10px auto; width:600px; height:auto;">
+<img class="destinazioni" 
+src="https://www.archeoroma.it/wp-content/uploads/colosseo-roma-anfiteatro-flavio-740x491.jpg" 
+alt="Colosseo" 
+style="display:block; margin: 10px auto; width:600px; height:auto;">
+</section>
+
+<!-- Kyoto -->
+<section id="kyoto">
+<h2>Kyoto</h2>
+<p>Kyoto è la città dei templi e dei giardini zen. Cammina tra antichi santuari, passeggia nei vicoli tradizionali e scopri la cultura millenaria giapponese. I suoi templi e i ciliegi in fiore regalano scenari da sogno.</p>
+<img class="destinazioni" 
+src="https://t3.ftcdn.net/jpg/02/65/23/70/360_F_265237090_Muthvb72m2POYFjyx7F5UCQLh9JdBtKN.jpg" 
+alt="antichi santuari" 
+style="display:block; margin: 10px auto; width:600px; height:auto">
+<img class="destinazioni" 
+src="https://media.istockphoto.com/id/1477515044/it/foto/kyoto-giappone-al-twilight-di-higashiyama.jpg?s=612x612&w=0&k=20&c=mH-N5rEcGgsO8cc6Aq4qhOgjPtidLPAZNhw78ArOrVs=" 
+alt="Kyoto al tramonto" 
+style="display:block; margin: 10px auto; width:600px; height:auto;">
+</section>
+
+<!-- Sydney -->
+<section id="sydney">
+<h2>Sydney</h2>
+<p>Sydney combina modernità e natura in modo unico. Ammira l’iconica Opera House, passeggia lungo le spiagge dorate come Bondi Beach e goditi panorami mozzafiato del porto e delle colline circostanti.</p>
+<img class="destinazioni" 
+src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/553000/553956-sydney-harbour-bridge.jpg" 
+alt="Sydney Harbour Bridge" 
+style="display:block; margin: 10px auto; width:600px; height:auto;">
+<img class="destinazioni" 
+src="https://allarremviaggio.com/wp-content/uploads/2020/11/sydney-opera-house.jpg" 
+alt="Sydney Opera House" 
+style="display:block; margin: 10px auto; width:600px; height:auto;">
+</section>
+
+<!-- Cusco -->
+<section id="cusco">
+<h2>Cusco</h2>
+<p>Cusco, cuore dell’antica civiltà Inca, è il punto di partenza ideale per visitare Machu Picchu. Le sue stradine acciottolate, le piazze coloniali e le montagne circostanti regalano un’esperienza culturale e naturale straordinaria.</p>
+<img class="destinazioni" 
+src="https://www.viaggio-centrosudamerica.com/wp-content/uploads/2019/08/Cusco-generale-bella.jpg" 
+alt="Vista panoramica di Cusco" 
+style="display:block; margin: 10px auto; width:600px; height:auto;">
+<img class="destinazioni" 
+src="https://media.tacdn.com/media/attractions-splice-spp-674x446/09/de/5f/59.jpg" 
+alt="Cusco al tramonto" 
+style="display:block; margin: 10px auto; width:600px; height:auto;">
+</section>
+
+<!-- Parigi -->
+<section id="parigi">
+<h2>Parigi</h2>
+<p>Parigi, la città dell’amore, è famosa per la Torre Eiffel, il Louvre e le romantiche passeggiate lungo la Senna. Vivi l’arte, la gastronomia e la magia dei quartieri storici in ogni angolo della capitale francese.</p>
+<img class="destinazioni" 
+src="https://media.istockphoto.com/id/1145422105/it/foto/vista-aerea-della-torre-eiffel-parigi.jpg?s=612x612&w=0&k=20&c=QUDPLrNS4f6Flu_vzNReALOZqudtGwbmddxIFLrDfMk=" 
+alt="Vista aerea della Torre Eiffel" 
+style="display:block; margin: 10px auto; width:600px; height:auto;">
+<img class="destinazioni" 
+src="https://www.france-voyage.com/visuals/photos/arco-trionfo-36075_w400.webp" 
+alt="Arc de Triomphe" 
+style="display:block; margin: 10px auto; width:600px; height:auto;">
+</section>
+
+<!-- Contatto -->
+<section id="contatto">
+  <h2>Contattaci</h2>
+  <p>Hai domande o vuoi ricevere informazioni sulle nostre destinazioni? Compila il modulo qui sotto e ti risponderemo il prima possibile.</p>
+
+  <form action="#" method="post">
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="messaggio">Messaggio:</label><br>
+    <textarea id="messaggio" name="messaggio" rows="4" cols="50" required></textarea><br><br>
+
+    <input type="submit" value="Invia">
+  </form>
+</section>
+
+<!-- Script JS -->
+<script>
+function showSection(id) {
+    const sections = document.querySelectorAll('section');
+    sections.forEach(sec => sec.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+}
+</script>
+
+</body>
+</html>
